@@ -9,66 +9,81 @@ let projects = [
   {
     id: 0,
     img: 'stimules.jpg',
-    title: 'Project Name1',
-    discription: 'About Of Project1',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    title: 'Blog App',
+    discription:
+      'This is a blog application, having all functionalities related to a blog app.',
+    tags: ['react', 'react-router', 'jsx', 'css'],
+    repolink: 'https://github.com/umakant-2113/BlogApp',
+    livelink: 'https://blog-app-two-chi.vercel.app',
   },
   {
     id: 1,
-    img: 'theory.jpg',
-    title: 'Project Name2',
-    discription: 'About Of Project2',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    img: 'stimules.jpg',
+    title: 'Booking App',
+    discription:
+      'This is a booking application, having all functionalities related to a booking app.',
+    tags: ['react', 'react-router', 'redux', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/BookingApp',
+    livelink: 'https://booking-app-plum.vercel.app/',
   },
   {
     id: 2,
-    img: 'Trackl.jpg',
-    title: 'Project Name3',
-    discription: 'About Of Project3',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    img: 'conduitapi.jpg',
+    title: 'Conduit API',
+    discription: 'This is an API for Blog applications like Medium.',
+    tags: ['node.js', 'express.js', 'mongodb', 'jwt'],
+    repolink: 'https://github.com/umakant-2113/Conduit-API',
+    livelink: 'https://github.com/umakant-2113/Conduit-API/blob/main/README.md',
   },
   {
     id: 3,
-    img: 'unitech.jpg',
-    title: 'Project Name4',
-    discription: 'About Of Project4',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    img: 'communityapi.jpg',
+    title: 'Community API',
+    discription:
+      'This is an API for Community applications like Stack Overflow.',
+    tags: ['node.js', 'express.js', 'mongodb', 'jwt'],
+    repolink: 'https://github.com/umakant-2113/Community-API',
+    livelink:
+      'https://github.com/umakant-2113/Community-API/blob/main/README.md',
   },
   {
     id: 4,
     img: 'yogaflex.png',
-    title: 'Project Name5',
-    discription: 'About Of Project5',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    title: 'Expense Tracker',
+    discription: 'This is an SSR Expense management application',
+    tags: ['express.js', 'mongodb', 'ejs', 'oauth'],
+    repolink: 'https://github.com/umakant-2113/ExpenseTracker',
+    livelink: 'https://u-expense-tracker.herokuapp.com',
   },
   {
     id: 5,
     img: 'stimules.jpg',
-    title: 'Project Name6',
-    discription: 'About Of Project6',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    title: 'Podcast',
+    discription:
+      'This is an SSR Podcast application with different subscriptions.',
+    tags: ['node.js', 'express.js', 'mongodb', 'ejs'],
+    repolink: 'https://github.com/umakant-2113/PodCast',
+    livelink: '',
   },
+
   {
     id: 6,
-    img: 'stimules.jpg',
-    title: 'Project Name7',
-    discription: 'About Of Project7',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    img: 'yogaflex.png',
+    title: 'YogaLex',
+    discription: 'This is responsive and adaptive static website for Yoga.',
+    tags: ['html', 'scss', 'css', 'javascript'],
+    repolink: 'https://github.com/umakant-2113/YogaLex',
+    livelink: '',
   },
   {
     id: 7,
-    img: 'stimules.jpg',
-    title: 'Project Name8',
-    discription: 'About Of Project8',
-    tags: ['html', 'css'],
-    view: ['repolink', 'Live Link'],
+    img: 'Unitech.jpg',
+    title: 'UniTech',
+    discription:
+      'This is responsive and adaptive static website for Businesses.',
+    tags: ['html', 'scss', 'css'],
+    repolink: 'https://github.com/umakant-2113/UniTech',
+    livelink: '',
   },
 ];
 
@@ -85,7 +100,7 @@ function Projects() {
   const [frontProjects, setFrontProjects] = useState(() => {
     let arr = [];
     for (let i = count; i < count + num; i++) {
-      arr.push(projects[i].id);
+      arr.push(projects[i]);
     }
     return arr;
   });
@@ -101,7 +116,7 @@ function Projects() {
     setFrontProjects((prevState) => {
       let arr = [];
       for (let i = count; i < count + num; i++) {
-        arr.push(projects[i].id);
+        arr.push(projects[i]);
       }
       return arr;
     });
@@ -119,7 +134,7 @@ function Projects() {
     setFrontProjects((prevState) => {
       let arr = [];
       for (let i = count; i < count + num; i++) {
-        arr.push(projects[i].id);
+        arr.push(projects[i]);
       }
       return arr;
     });
@@ -127,7 +142,6 @@ function Projects() {
 
   return (
     <>
-      {/* {console.log(count)} */}
       <section class='projects' id='projects'>
         <h2>Projects</h2>
         <div className='project-box mn-sm-center '>
@@ -139,25 +153,26 @@ function Projects() {
                     <figure className='figure'>
                       <img
                         className='full-width'
-                        src={`./assets/projects/${projects[item].img}`}
+                        src={`./assets/projects/${item.img}`}
                         alt=''
                       />
                     </figure>
-                    <h3 className='project-name'> {projects[item].title}</h3>
-                    <p className='discription'>{projects[item].discription} </p>
+                    <h3 className='project-name'> {item.title}</h3>
+                    <p className='discription'>{item.discription} </p>
                     <div className='tag-box'>
-                      <p> HTML</p>
-                      <p> CSS</p>
+                      {item.tags.map((tag) => {
+                        return <p> {tag.toUpperCase()}</p>;
+                      })}
                     </div>
                     <div className='repolink-box'>
                       <abbr title='Go To Repository'>
                         {' '}
-                        <a href=''>
+                        <a href={`${item.repolink}`} target='blank'>
                           <VscGithub />
                         </a>
                       </abbr>
                       <abbr title='Go To Live Demo'>
-                        <a href=''>
+                        <a href={`${item.livelink}`} target='blank'>
                           <FaEye />{' '}
                         </a>
                       </abbr>
@@ -168,8 +183,14 @@ function Projects() {
             );
           })}
         </div>
-        <TbChevronsLeft className='left sm-left mn-left ' onClick={handleLeft} />
-        <TbChevronsRight className='right  sm-right mn-right' onClick={handleRight} />
+        <TbChevronsLeft
+          className='left sm-left mn-left '
+          onClick={handleLeft}
+        />
+        <TbChevronsRight
+          className='right  sm-right mn-right'
+          onClick={handleRight}
+        />
       </section>
     </>
   );

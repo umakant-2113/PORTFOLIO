@@ -41,7 +41,7 @@ export default function Header() {
             </li>
 
             <li class='active'>
-              <a href='#'>
+              <a href='./assets/docs/Umakant_Rajput_Resume.pdf' download>
                 Resume
                 <span></span>
                 <span></span>
