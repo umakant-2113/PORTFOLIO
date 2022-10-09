@@ -24,7 +24,7 @@ let projects = [
       'This is a booking application, having all functionalities related to a booking app.',
     tags: ['react', 'react-router', 'redux', 'jsx'],
     repolink: 'https://github.com/umakant-2113/BookingApp',
-    livelink: 'https://booking-app-plum.vercel.app/',
+    livelink: 'https://booking-app-plum.vercel.app',
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ let projects = [
       'This is an SSR Podcast application with different subscriptions.',
     tags: ['node.js', 'express.js', 'mongodb', 'ejs'],
     repolink: 'https://github.com/umakant-2113/PodCast',
-    livelink: '',
+    livelink: 'https://u-podcast.herokuapp.com',
   },
 
   {
