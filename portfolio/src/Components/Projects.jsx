@@ -73,7 +73,7 @@ let projects = [
     discription: 'This is responsive and adaptive static website for Yoga.',
     tags: ['html', 'scss', 'css', 'javascript'],
     repolink: 'https://github.com/umakant-2113/YogaLex',
-    livelink: '',
+    livelink: 'https://joyful-florentine-9a9b86.netlify.app',
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ let projects = [
       'This is responsive and adaptive static website for Businesses.',
     tags: ['html', 'scss', 'css'],
     repolink: 'https://github.com/umakant-2113/UniTech',
-    livelink: '',
+    livelink: 'https://jolly-dodol-cdb907.netlify.app',
   },
 ];
 
