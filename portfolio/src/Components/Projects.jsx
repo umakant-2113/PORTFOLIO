@@ -37,14 +37,12 @@ let projects = [
   },
   {
     id: 3,
-    img: 'communityapi.jpg',
-    title: 'Community API',
-    discription:
-      'This is an API for Community applications like Stack Overflow.',
-    tags: ['node.js', 'express.js', 'mongodb', 'jwt'],
-    repolink: 'https://github.com/umakant-2113/Community-API',
-    livelink:
-      'https://github.com/umakant-2113/Community-API/blob/main/README.md',
+    img: 'portfolio.png',
+    title: 'Portfolio',
+    discription: 'This is a portFolio application .',
+    tags: ['html', 'css', 'java script', 'react'],
+    repolink: 'https://github.com/umakant-2113/PORTFOLIO',
+    livelink: 'https://portfolio-delta-ten-72.vercel.app',
   },
   {
     id: 4,
@@ -57,7 +55,7 @@ let projects = [
   },
   {
     id: 5,
-    img: 'stimules.jpg',
+    img: 'podcast.png',
     title: 'Podcast',
     discription:
       'This is an SSR Podcast application with different subscriptions.',
