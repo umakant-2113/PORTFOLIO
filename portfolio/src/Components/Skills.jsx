@@ -19,52 +19,52 @@ function Skills() {
 
         <div className='skils-box'>
           <figure className='figure1 '>
-            <AiFillHtml5 />
+            <AiFillHtml5 className='tool mn-tools' />
             <figcaption>HTML 5</figcaption>
           </figure>
 
           <figure className='figure1  mn-flex-50'>
-            <IoLogoCss3  />
+            <IoLogoCss3 className='tool' />
             <figcaption>CSS 3</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiSass  />
+            <SiSass className='tool' />
             <figcaption>SCSS</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiJavascript  />
+            <SiJavascript className='tool' />
             <figcaption>JS</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiReact  />
+            <SiReact className='tool' />
             <figcaption>React</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiRedux  />
+            <SiRedux className='tool' />
             <figcaption>Redux</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiMongodb  />
+            <SiMongodb className='tool' />
             <figcaption>Mongo DB</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiNodedotjs  />
+            <SiNodedotjs className='tool' />
             <figcaption>Node.js</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiExpress  />
+            <SiExpress className='tool' />
             <figcaption>Express.js</figcaption>
           </figure>
 
           <figure className='figure1'>
-            <SiSocketdotio   />
+            <SiSocketdotio className='tool' />
             <figcaption>Socket.io</figcaption>
           </figure>
         </div>
