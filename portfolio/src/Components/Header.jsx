@@ -2,20 +2,20 @@ import React from 'react';
 export default function Header() {
   return (
     <>
-      <header class='flex' id='top'>
+      <header className='flex' id='top'>
         <ul>
-          <li class='main-brand'>
+          <li className='main-brand'>
             <a href='#'>
               {'<'} <strong>Umakant</strong> {'/>'}
             </a>
           </li>
         </ul>
-        <label for='toggle' class='bar'>
-          <i class='fas fa-bars'></i>
+        <label htmlFor='toggle'  className='bar'  >
+          <i className='fas fa-bars'></i>
         </label>
         <input type='checkbox' id='toggle' />
-        <nav class='nav'>
-          <ul class='flex sm-column'>
+        <nav className='nav'>
+          <ul className='flex sm-column'>
             <li className='list'>
               <a href='#home'>Home</a>
             </li>
@@ -40,7 +40,7 @@ export default function Header() {
               <a href='#contact'>Contact</a>
             </li>
 
-            <li class='active'>
+            <li className='active'>
               <a href='./assets/docs/Umakant_Rajput_Resume.pdf' download>
                 Resume
                 <span></span>

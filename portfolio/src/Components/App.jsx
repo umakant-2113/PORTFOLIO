@@ -25,10 +25,10 @@ function App() {
       <Footer />
 
       <div className='icon-div'>
-          <a href='#top' class='top-button'>
+          <a href='#top' className='top-button'>
             <abbr title='Go To Top'>
               {' '}
-              <i style={{color: '#c12020', fontSize: '2.4rem'}} class='fas fa-caret-up'></i>
+              <i style={{color: '#c12020', fontSize: '2.4rem'}} className='fas fa-caret-up'></i>
             </abbr>
           </a>
         </div>

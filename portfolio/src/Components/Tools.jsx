@@ -13,57 +13,57 @@ import { SiNetlify } from 'react-icons/si';
 
 function Tools() {
   return (
-    <div id='tool'>
+    <div>
       <section id='tools' style={{ backgroundColor: '#303030' }}>
         <h2>Tools </h2>
         <div>
           <figure className='figure2'>
-            <SiVisualstudio className='tool' />
+            <SiVisualstudio />
             <figcaption>VS Code</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <SiNpm className='tool' />
+            <SiNpm />
             <figcaption>NPM</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <FaGitAlt className='tool' />
+            <FaGitAlt />
             <figcaption>Git</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <FaGithubSquare className='tool' />
+            <FaGithubSquare />
             <figcaption>Github</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <SiMongodb className='tool' />
+            <SiMongodb />
             <figcaption>Atlas</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <TbBrandTailwind className='tool' />
+            <TbBrandTailwind />
             <figcaption>Tailwind</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <GrHeroku className='tool' />
+            <GrHeroku />
             <figcaption>Heroku</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <SiVercel className='tool' />
+            <SiVercel />
             <figcaption>Vercel</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <SiFirebase className='tool' />
+            <SiFirebase />
             <figcaption>Firebase</figcaption>
           </figure>
 
           <figure className='figure2'>
-            <SiNetlify className='tool' />
+            <SiNetlify />
             <figcaption>Netllify</figcaption>
           </figure>
         </div>

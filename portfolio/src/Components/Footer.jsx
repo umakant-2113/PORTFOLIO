@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
  <>
-         <footer class="sm-column">
+         <footer className="sm-column">
           <small>
            Designed And Build By <a href='#about'> Umakant Rajput </a>.
            </small>

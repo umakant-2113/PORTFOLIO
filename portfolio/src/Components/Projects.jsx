@@ -8,17 +8,17 @@ import { TbChevronsRight } from 'react-icons/tb';
 let projects = [
   {
     id: 0,
-    img: 'stimules.jpg',
+    img: 'blog-app.png',
     title: 'Blog App',
     discription:
       'This is a blog application, having all functionalities related to a blog app.',
     tags: ['react', 'react-router', 'jsx', 'css'],
     repolink: 'https://github.com/umakant-2113/BlogApp',
-    livelink: 'https://blog-app-two-chi.vercel.app',
+    livelink: 'https://coruscating-licorice-167289.netlify.app',
   },
   {
     id: 1,
-    img: 'stimules.jpg',
+    img: 'hotel-booking.png',
     title: 'Booking App',
     discription:
       'This is a booking application, having all functionalities related to a booking app.',
@@ -142,44 +142,45 @@ function Projects() {
 
   return (
     <>
-      <section class='projects' id='projects'>
+      <section className='projects' id='projects'>
         <h2>Projects</h2>
         <div className='project-box mn-sm-center '>
           {frontProjects.map((item) => {
             return (
-              <>
-                <div className='flex-30 project-item sm-flex-45 mn-sm-bet '>
-                  <div>
-                    <figure className='figure'>
-                      <img
-                        className='full-width'
-                        src={`./assets/projects/${item.img}`}
-                        alt=''
-                      />
-                    </figure>
-                    <h3 className='project-name'> {item.title}</h3>
-                    <p className='discription'>{item.discription} </p>
-                    <div className='tag-box'>
-                      {item.tags.map((tag) => {
-                        return <p> {tag.toUpperCase()}</p>;
-                      })}
-                    </div>
-                    <div className='repolink-box'>
-                      <abbr title='Go To Repository'>
-                        {' '}
-                        <a href={`${item.repolink}`} target='blank'>
-                          <VscGithub />
-                        </a>
-                      </abbr>
-                      <abbr title='Go To Live Demo'>
-                        <a href={`${item.livelink}`} target='blank'>
-                          <FaEye />{' '}
-                        </a>
-                      </abbr>
-                    </div>
+              <div
+                className='flex-30 project-item sm-flex-45 mn-sm-bet'
+                key={item.id}
+              >
+                <div>
+                  <figure className='figure'>
+                    <img
+                      className='full-width'
+                      src={`./assets/projects/${item.img}`}
+                      alt=''
+                    />
+                  </figure>
+                  <h3 className='project-name'> {item.title}</h3>
+                  <p className='discription'>{item.discription} </p>
+                  <div className='tag-box'>
+                    {item.tags.map((tag) => {
+                      return <p> {tag.toUpperCase()}</p>;
+                    })}
+                  </div>
+                  <div className='repolink-box'>
+                    <abbr title='Go To Repository'>
+                      {' '}
+                      <a href={`${item.repolink}`} target='blank'>
+                        <VscGithub />
+                      </a>
+                    </abbr>
+                    <abbr title='Go To Live Demo'>
+                      <a href={`${item.livelink}`} target='blank'>
+                        <FaEye />{' '}
+                      </a>
+                    </abbr>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
