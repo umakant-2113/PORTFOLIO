@@ -38,6 +38,13 @@
     justify-content: space-around;
   }
   .mn-tools {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  /* .mn-flex-start {
+    text-align: left;
+    border: 2px solid red;
+  } */
+  .mn-tools-1 {
+    min-width: 100px;
   }
 }

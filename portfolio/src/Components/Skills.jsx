@@ -19,7 +19,7 @@ function Skills() {
 
         <div className='skils-box'>
           <figure className='figure1 '>
-            <AiFillHtml5 className='tool mn-tools' />
+            <AiFillHtml5 className='tool' />
             <figcaption>HTML 5</figcaption>
           </figure>
 

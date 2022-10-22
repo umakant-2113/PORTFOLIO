@@ -5,9 +5,9 @@ export default function Contact() {
     <>
       <section id='contact'>
         <h4 style={{ marginBottom: '4rem' }}>Get Tn Touch</h4>
-        <div className='contact-box   sm-center'>
-          <div className='flex-20 sm-flex-50 '>
-            <h3 className='contact-h3'>Let's Connect Here ! </h3>
+        <div className='contact-box   sm-center   mn-flex-start '>
+          <div className='flex-20 sm-flex-50  '>
+            <h3 className='contact-h3 '>Let's Connect Here ! </h3>
 
             <div className='contact-icon-div'>
               <a
@@ -37,7 +37,7 @@ export default function Contact() {
 
           <div className='flex-50 sm-flex-50 sm-between '>
             <h3 className='contact-h3 center'>
-              Let's Make Something Amazing Together !{' '}
+              Make Something Amazing Together !{' '}
             </h3>
 
             <div className='contact-mail sm-bet'>

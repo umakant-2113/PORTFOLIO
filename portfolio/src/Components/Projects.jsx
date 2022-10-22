@@ -37,7 +37,7 @@ let projects = [
   },
   {
     id: 3,
-    img: 'portfolio.png',
+    img: 'portFolio.png',
     title: 'Portfolio',
     discription: 'This is a portFolio application .',
     tags: ['html', 'css', 'java script', 'react'],
@@ -46,7 +46,7 @@ let projects = [
   },
   {
     id: 4,
-    img: 'yogaflex.png',
+    img: 'expanseT.png',
     title: 'Expense Tracker',
     discription: 'This is an SSR Expense management application',
     tags: ['express.js', 'mongodb', 'ejs', 'oauth'],
