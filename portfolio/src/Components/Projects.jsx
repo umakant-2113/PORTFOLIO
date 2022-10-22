@@ -37,7 +37,7 @@ let projects = [
   },
   {
     id: 3,
-    img: 'portFolio.png',
+    img: 'PortFolio.png',
     title: 'Portfolio',
     discription: 'This is a portFolio application .',
     tags: ['html', 'css', 'java script', 'react'],
