@@ -14,17 +14,17 @@ let projects = [
       'This is a blog application, having all functionalities related to a blog app.',
     tags: ['react', 'react-router', 'jsx', 'css'],
     repolink: 'https://github.com/umakant-2113/BlogApp',
-    livelink: 'https://coruscating-licorice-167289.netlify.app',
+    livelink: 'https://conduit-app-livid.vercel.app',
   },
   {
     id: 1,
-    img: 'hotel-booking.png',
-    title: 'Booking App',
+    img: 'github-battel.png',
+    title: 'Github-Battel',
     discription:
-      'This is a booking application, having all functionalities related to a booking app.',
+      'This is aGithub-Battel application, having all functionalities related to a Github-Battel.',
     tags: ['react', 'react-router', 'redux', 'jsx'],
-    repolink: 'https://github.com/umakant-2113/BookingApp',
-    livelink: 'https://booking-app-plum.vercel.app',
+    repolink: 'https://github.com/umakant-2113/Git-Hub-Battel',
+    livelink: 'https://astonishing-fenglisu-226aae.netlify.app',
   },
   {
     id: 2,
@@ -111,6 +111,7 @@ function Projects() {
         return 0;
       }
     });
+
     setFrontProjects((prevState) => {
       let arr = [];
       for (let i = count; i < count + num; i++) {
@@ -131,9 +132,11 @@ function Projects() {
 
     setFrontProjects((prevState) => {
       let arr = [];
-      for (let i = count; i < count + num; i++) {
-        arr.push(projects[i]);
+ 
+        for (let i = count; i < count + num ; i++) {
+          arr.push(projects[i]);
       }
+
       return arr;
     });
   }
