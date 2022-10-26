@@ -22,18 +22,9 @@ let projects = [
     title: 'Github-Battel',
     discription:
       'This is aGithub-Battel application, having all functionalities related to a Github-Battel.',
-    tags: ['react', 'react-router', 'redux', 'jsx'],
+    tags: ['react', 'react-router', 'css', 'jsx'],
     repolink: 'https://github.com/umakant-2113/Git-Hub-Battel',
     livelink: 'https://astonishing-fenglisu-226aae.netlify.app',
-  },
-  {
-    id: 2,
-    img: 'conduitapi.jpg',
-    title: 'Conduit API',
-    discription: 'This is an API for Blog applications like Medium.',
-    tags: ['node.js', 'express.js', 'mongodb', 'jwt'],
-    repolink: 'https://github.com/umakant-2113/Conduit-API',
-    livelink: 'https://github.com/umakant-2113/Conduit-API/blob/main/README.md',
   },
   {
     id: 3,
@@ -44,6 +35,16 @@ let projects = [
     repolink: 'https://github.com/umakant-2113/PORTFOLIO',
     livelink: 'https://portfolio-delta-ten-72.vercel.app',
   },
+  {
+    id: 2,
+    img: 'conduitapi.jpg',
+    title: 'Conduit API',
+    discription: 'This is an API for Blog applications like Medium.',
+    tags: ['node.js', 'express.js', 'mongodb', 'jwt'],
+    repolink: 'https://github.com/umakant-2113/Conduit-API',
+    livelink: 'https://github.com/umakant-2113/Conduit-API/blob/main/README.md',
+  },
+
   {
     id: 4,
     img: 'expanseT.png',
@@ -95,6 +96,9 @@ function Projects() {
     num = 3;
   }
   const [count, setCount] = useState(0);
+
+  // const [view, setView] = useState("css");
+
   const [frontProjects, setFrontProjects] = useState(() => {
     let arr = [];
     for (let i = count; i < count + num; i++) {
@@ -132,9 +136,9 @@ function Projects() {
 
     setFrontProjects((prevState) => {
       let arr = [];
- 
-        for (let i = count; i < count + num ; i++) {
-          arr.push(projects[i]);
+
+      for (let i = count; i < count + num; i++) {
+        arr.push(projects[i]);
       }
 
       return arr;
@@ -176,7 +180,7 @@ function Projects() {
                     </abbr>
                     <abbr title='Go To Live Demo'>
                       <a href={`${item.livelink}`} target='blank'>
-                        <FaEye />{' '}
+                        {item.tags.includes('css') ? <FaEye /> : ''}{' '}
                       </a>
                     </abbr>
                   </div>
