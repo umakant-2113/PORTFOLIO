@@ -18,6 +18,26 @@ let projects = [
   },
   {
     id: 1,
+    img: 'quiz.png',
+    title: 'Quiz-App',
+    discription:
+      'This is a Quiz application, In which a user can play quiz after that can show his result.',
+    tags: ['react', 'react-router', 'css', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/Quiz-App',
+    livelink: 'https://stunning-croissant-f4bde1.netlify.app',
+  },
+  {
+    id: 2,
+    img: 'tictok.png',
+    title: 'Tic-Toc-Toe',
+    discription:
+      'This is a Tic-Toc-Toe application, Can play as a single-user and can also play with computer',
+    tags: ['react', 'react-router', 'css', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/Tik-Tok-Toe-ass',
+    livelink: 'https://unique-smakager-9421d9.netlify.app/',
+  },
+  {
+    id: 3,
     img: 'github-battel.png',
     title: 'Github-Battel',
     discription:
@@ -27,7 +47,37 @@ let projects = [
     livelink: 'https://astonishing-fenglisu-226aae.netlify.app',
   },
   {
-    id: 3,
+    id: 4,
+    img: 'shooping.png',
+    title: 'Shooping-Cart',
+    discription:
+      'This is a Shooping-Cart application,In which a user can also do shopping, after that he can check his total amount.',
+    tags: ['react', 'react-router', 'css', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/React-shooping-Cart',
+    livelink: 'https://kaleidoscopic-bienenstitch-0c11fe.netlify.app/',
+  },
+  {
+    id: 5,
+    img: 'timer.png',
+    title: 'Timmer-App',
+    discription:
+      'This is a Timmer application,in which a user can set a stopwatch and counter ',
+    tags: ['react', 'react-router', 'css', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/Counter-Watch-App',
+    livelink: 'https://fluffy-naiad-c1c8ae.netlify.app/',
+  },
+  {
+    id: 6,
+    img: 'monthly.png',
+    title: 'Monthly-Activity',
+    discription:
+      'This is a Monthly-Activity  application, in which he can set his entire months activity.',
+    tags: ['react', 'react-router', 'css', 'jsx'],
+    repolink: 'https://github.com/umakant-2113/Monthly-Activity-Tracker',
+    livelink: 'https://musical-unicorn-97d03e.netlify.app/',
+  },
+  {
+    id: 7,
     img: 'PortFolio.png',
     title: 'Portfolio',
     discription: 'This is a portFolio application .',
@@ -36,7 +86,7 @@ let projects = [
     livelink: 'https://portfolio-delta-ten-72.vercel.app',
   },
   {
-    id: 2,
+    id: 8,
     img: 'conduitapi.jpg',
     title: 'Conduit API',
     discription: 'This is an API for Blog applications like Medium.',
@@ -46,7 +96,7 @@ let projects = [
   },
 
   {
-    id: 4,
+    id: 9,
     img: 'expanseT.png',
     title: 'Expense Tracker',
     discription: 'This is an SSR Expense management application',
@@ -55,7 +105,7 @@ let projects = [
     livelink: 'https://u-expense-tracker.herokuapp.com',
   },
   {
-    id: 5,
+    id: 10,
     img: 'podcast.png',
     title: 'Podcast',
     discription:
@@ -66,7 +116,7 @@ let projects = [
   },
 
   {
-    id: 6,
+    id: 11,
     img: 'yogaflex.png',
     title: 'YogaLex',
     discription: 'This is responsive and adaptive static website for Yoga.',
@@ -75,7 +125,7 @@ let projects = [
     livelink: 'https://dazzling-rabanadas-4052dc.netlify.app/',
   },
   {
-    id: 7,
+    id: 12,
     img: 'Unitech.jpg',
     title: 'UniTech',
     discription:
@@ -97,13 +147,12 @@ function Projects() {
   }
   const [count, setCount] = useState(0);
 
-  // const [view, setView] = useState("css");
-
   const [frontProjects, setFrontProjects] = useState(() => {
     let arr = [];
     for (let i = count; i < count + num; i++) {
       arr.push(projects[i]);
     }
+    console.log(arr);
     return arr;
   });
 
@@ -150,11 +199,11 @@ function Projects() {
       <section className='projects' id='projects'>
         <h2>Projects</h2>
         <div className='project-box mn-sm-center '>
-          {frontProjects.map((item) => {
+          {frontProjects.map((item, index) => {
             return (
               <div
                 className='flex-30 project-item sm-flex-45 mn-sm-bet'
-                key={item.id}
+                key={index}
               >
                 <div>
                   <figure className='figure'>
