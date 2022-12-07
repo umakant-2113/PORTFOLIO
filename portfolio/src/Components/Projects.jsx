@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { VscGithub } from 'react-icons/vsc';
 import { FaEye } from 'react-icons/fa';
 import { TbChevronsLeft } from 'react-icons/tb';
@@ -18,6 +17,15 @@ let projects = [
   },
   {
     id: 1,
+    img: 'mi.png',
+    title: 'Mi Store',
+    discription: 'This is a MI STore application ',
+    tags: ['react', 'react-router', 'jsx', 'css'],
+    repolink: 'https://github.com/umakant-2113/MiStore',
+    livelink: 'https://clever-semifreddo-24b50f.netlify.app/',
+  },
+  {
+    id: 2,
     img: 'quiz.png',
     title: 'Quiz-App',
     discription:
@@ -27,7 +35,7 @@ let projects = [
     livelink: 'https://stunning-croissant-f4bde1.netlify.app',
   },
   {
-    id: 2,
+    id: 3,
     img: 'tictok.png',
     title: 'Tic-Toc-Toe',
     discription:
@@ -37,7 +45,7 @@ let projects = [
     livelink: 'https://unique-smakager-9421d9.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     img: 'github-battel.png',
     title: 'Github-Battel',
     discription:
@@ -47,7 +55,7 @@ let projects = [
     livelink: 'https://astonishing-fenglisu-226aae.netlify.app',
   },
   {
-    id: 4,
+    id: 5,
     img: 'shooping.png',
     title: 'Shooping-Cart',
     discription:
@@ -57,7 +65,7 @@ let projects = [
     livelink: 'https://kaleidoscopic-bienenstitch-0c11fe.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     img: 'timer.png',
     title: 'Timmer-App',
     discription:
@@ -67,7 +75,7 @@ let projects = [
     livelink: 'https://fluffy-naiad-c1c8ae.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     img: 'monthly.png',
     title: 'Monthly-Activity',
     discription:
@@ -77,7 +85,7 @@ let projects = [
     livelink: 'https://musical-unicorn-97d03e.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     img: 'PortFolio.png',
     title: 'Portfolio',
     discription: 'This is a portFolio application .',
@@ -86,7 +94,7 @@ let projects = [
     livelink: 'https://portfolio-delta-ten-72.vercel.app',
   },
   {
-    id: 8,
+    id: 9,
     img: 'conduitapi.jpg',
     title: 'Conduit API',
     discription: 'This is an API for Blog applications like Medium.',
@@ -96,7 +104,7 @@ let projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     img: 'expanseT.png',
     title: 'Expense Tracker',
     discription: 'This is an SSR Expense management application',
@@ -105,7 +113,7 @@ let projects = [
     livelink: 'https://u-expense-tracker.herokuapp.com',
   },
   {
-    id: 10,
+    id: 11,
     img: 'podcast.png',
     title: 'Podcast',
     discription:
@@ -116,7 +124,7 @@ let projects = [
   },
 
   {
-    id: 11,
+    id: 12,
     img: 'yogaflex.png',
     title: 'YogaLex',
     discription: 'This is responsive and adaptive static website for Yoga.',
@@ -125,7 +133,7 @@ let projects = [
     livelink: 'https://dazzling-rabanadas-4052dc.netlify.app/',
   },
   {
-    id: 12,
+    id: 13,
     img: 'Unitech.jpg',
     title: 'UniTech',
     discription:
