@@ -12,7 +12,7 @@ let projects = [
     discription:
       'This is a blog application, having all functionalities related to a blog app.',
     tags: ['react', 'react-router', 'jsx', 'css'],
-    repolink: 'https://github.com/umakant-2113/BlogApp',
+    repolink: 'https://github.com/umakant-2113/Blog-App',
     livelink: 'https://conduit-app-livid.vercel.app',
   },
   {
