@@ -10,7 +10,7 @@ export default function Header() {
             </a>
           </li>
         </ul>
-        <label htmlFor='toggle'  className='bar'  >
+        <label htmlFor='toggle' className='bar'>
           <i className='fas fa-bars'></i>
         </label>
         <input type='checkbox' id='toggle' />
@@ -41,7 +41,7 @@ export default function Header() {
             </li>
 
             <li className='active'>
-              <a href='./assets/docs/resume.pdf' download> 
+              <a href='./assets/docs/resume1.pdf' download>
                 Resume
                 <span></span>
                 <span></span>
